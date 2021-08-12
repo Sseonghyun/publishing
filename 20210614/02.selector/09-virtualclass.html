@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>가상클래스 선택자</title>
+        <style>
+            * {margin: 0;}
+            a:hover { color: royalblue;}
+             /* a:hover는 a태그 위에 마우스가 올려졌을때 적용할 변화를 설정 */
+            a:active { color: salmon;}
+            /* a:active는 a태그를 클릭하는 그 순간 적용할 변화를 설정 */
+            a:link { color: seagreen;}
+            /* a:link는 클릭한 적이 없는 상태의 a태그를 적용할 css를 설정 */
+            a:visited { color: red;}
+            /* a:visited는 클릭한 후 상태의 (링크의 방문한 상태) a태그를 적용할 css를 설정 */
+            h1:active { color: yellow;}
+            /* a를 제외한 다른것도 가능함 */
+        </style>
+    </head>
+    <body>
+        <h1>한국 ICT 인재개발원</h1>
+        <ul>
+            <li><a href="https://www.naver.com">회사소개</a></li>
+            <li><a href="https://www.daum.net">강의소개</a></li>
+            <li><a href="https://www.google.co.kr">문의하기</a></li>
+        </ul>
+    </body>
+</html>

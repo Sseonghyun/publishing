@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>아이디 선택자</title>
+        <style>
+            #content {color: crimson;}
+            #title {color: gold;}
+            /* 특정태그를 할때 #내용을 사용한다.
+            id는 전체문서에서 하나만 사용가능하다
+            ( 문법적으로는 틀리지않지만 규칙적으로는 틀림 "css를 사용하는사람들의 일종의 약속"
+              ex: id="content"를 한가지 사용했으면 다음에 필요한경우 id="content를제외한 내용") */
+            /* id 선택자는 태그명과는 상관 없이 특정 태그에 부여된 id만을 고려해 css를 적용
+            이 때, 특정 id이름은 2개이상의 태그에 동시에 적용하지 않는것이 원칙! */
+        </style>
+    </head>
+    <body>
+        <p id="title">css 잘하는 법</p>
+        <p id="content">
+            css를 그냥 많이 합니다.
+        </p>
+    </body>
+</html>
