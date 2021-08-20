@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+    * { margin: 0; padding: 0;}
+    #header { border: 2px solid blue; height: 100px; }
+    #body { border: 2px solid blue; height: 250px; float: left; } 
+    #footer { clear:both; border: 2px solid blue; height: 100px; }
+    div > body { display: inline-block; height: 250px; }
+    .sidel {float: left; border: 2px solid aqua; width: 100px; height: 250px; }
+    .content {float: left; border: 2px solid blue; width: 280px; height: 250px; }
+    .sider {float:right; border: 2px solid aqua; width: 100px; height: 250px;}
+    body { width: 500px; }
+</style>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+    <div id="header">
+        Header
+    </div>
+    <div id="body">
+        <div class="sidel">사이드바</div>
+        <div class="content">컨텐츠</div>    
+        <div class="sider">사이드바</div>    
+    </div>
+    <div id="footer">
+        Footer
+    </div>
+</body>
+</html>

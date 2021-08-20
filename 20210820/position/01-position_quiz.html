@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+    * { margin: 0; padding: 0;}
+    #header { border: 2px solid blue; height: 100px; }
+    #body { border: 2px solid blue; height: 250px; position: relative; }
+    #footer { border: 2px solid blue; height: 100px;}
+    div > body { display: inline-block; height: 250px; }
+    .side { border: 2px solid aqua; width: 100px; height: 250px; position: absolute; left: 0px; top: 0px; }
+    .content { border: 2px solid aqua; width: 400px; height: 250px; position: absolute; left: 100px; top: 0px; }
+    body { width: 500px;}
+</style>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+    <div id="header">
+        <h1>헤더</h1>
+    </div>
+    <div id="body">
+        <div class="side">사이드바</div>
+        <div class="content">컨텐츠</div>
+    </div>
+    <div id="footer">
+        <h1>푸터</h1>
+    </div>
+</body>
+</html>
