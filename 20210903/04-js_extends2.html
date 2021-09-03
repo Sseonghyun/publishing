@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+
+</style>
+<script>
+    // 문제
+    // Person과 그것을 상속한 요소를 2개 만들어서 활용해주세요.
+
+    // Person은 이름과 나이를 가집니다.
+    // 나머지 요소들은 각자 자기자신의 멤버변수 하나와 자기 자신만 사용할 수 있는 메서드(행동)을 하나씩 가집니다.
+
+    function Person(name) {
+        this.name = name;
+    }
+
+    Person.prototype.setName = function(name) {
+        this.name = name;
+    }
+
+    Person.prototype.getName = function() {
+        return this.name; 
+    }
+
+    function Soldier(name, rank) {
+        this.rank = rank;
+    }
+
+    function Doctor(name, major) {
+        this.major = major;
+    }
+
+    var s1 = new Person("김군인");
+    Soldier.prototype = s1;
+
+    Soldier.prototype.setRank = function(rank) {
+        this.rank = rank;
+    }
+
+    Soldier.prototype.getRank = function(rank) {
+        return this.rank;
+    }
+
+    var kimgun = new Soldier("김군인", "대위");
+    kimgun.setName("김대위");
+    console.log(kimgun.getName());
+    console.log(s1);
+    console.log(kimgun);
+
+    var d1 = new Person("이의사");
+    Doctor.prototype = d1;
+
+    Doctor.prototype.SetMajor = function(major) {
+        this.major = major;
+    }
+
+    Doctor.prototype.getMajor = function(major) {
+        return this.major;
+    }
+
+    var leedo = new Doctor("이의사", "치과");
+    leedo.setName("이닥터");
+    console.log(leedo.getName());
+    console.log(d1);
+    console.log(leedo);
+   
+
+</script>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+</body>
+</html>
